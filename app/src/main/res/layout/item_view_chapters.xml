@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_marginHorizontal="@dimen/_5sdp"
+    app:cardCornerRadius="@dimen/_15sdp"
+    app:cardUseCompatPadding="true"
+    android:layout_height="@dimen/_200sdp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/chapter_selector"
+        android:clickable="true"
+        android:focusable="true"
+        android:hapticFeedbackEnabled="true">
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.024"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:text="Chapter "
+                    android:textColor="@color/titleColor"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/chNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:textColor="@color/titleColor"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/chTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:fontFamily="sans-serif-black"
+                android:text="Arjun Vishad Yog"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+            <TextView
+                android:id="@+id/chDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_5sdp"
+                android:paddingRight="@dimen/_5sdp"
+                android:textColor="@color/black"
+                android:text="wejlrbjerbgjfbejgbjkjdfbgjdsbjfgbjdsbgjbjkiwhefhwherfjhjrgfhjkshgjfshdjghsjdkghjksdhg
+khuyfgvkhfvhkfjhyfvdfcjhgfdcdjyhgdkjkclluvdykjhgkdjhgftdhsfjsrhfsrhsdgfjksdhjkghbsdjgsdgdsgsdgsdgkhnklhlkhlkhhhklhlkhhlkhlkhlkhlkhlkhlkhklhlkhklhlkhklhkllkhlkhjkhlj
+ kufyjdfyjdfudfkudfuiyedriuydyusdgsdgsgsdgsdgsdjkhgfsdhgfshjkfhjskdhfjhsjkdfhjkshdjfkhjskhfjsjfhjshdfjhsdjkfhjksdhfjksdhfjksdhfjkhsdjkfhsdjkfhjkdshfjksdhjkfhdsjkfhjksdhfjksdhfjkhdsjkfhjksdhfjksdhfjksdhfjkdshfjksdhjfkhdsjkfhjksdhfjkdshfjksdhfjkshdjkfhsjdkhfjkdshkf
+jhjghglgkugukgguguujsdhnfjksdjkfhjsdhfjhsjdfhjsdhfjsdhfjkhsdjkfhjksdhfjsdhjkfhsdjkfhjkdshfjkds
+xgfhfgcnfnfcnfjnfjnfnfnfnfdndndsjkfkhjsdhfjkdshfjhsdjkfhjskdfsd
+dsjfbjsdfjkdsjkfhjdhfjdshf
+sdjkfhjksdhfjhsdfjhsdjkfhjsdf" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:src="@drawable/baseline_book_24" />
+
+            <TextView
+                android:id="@+id/countVerses"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:text="47"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:text="Verses"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:alpha="0.2"
+            android:src="@drawable/up_left"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:layout_width="100sp"
+            android:layout_height="@dimen/_100sdp"
+            android:alpha="0.2"
+            android:src="@drawable/up_right"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:src="@drawable/verse_bottom_left"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:alpha="0.2"/>
+
+        <ImageView
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:src="@drawable/verse_bottom_left"
+            android:alpha="0.2"
+            android:rotationY="-4555454345554"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>

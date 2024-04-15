@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".View.Fragments.VersesFragment">
+
+
+ <LinearLayout
+     android:id="@+id/linearLayout4"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_marginTop="@dimen/_10sdp"
+     android:orientation="vertical"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toTopOf="parent">
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+   <ImageView
+       android:layout_width="30dp"
+       android:layout_height="30dp"
+       android:src="@drawable/kalash"
+       app:layout_constraintBottom_toBottomOf="@+id/textView2"
+       app:layout_constraintStart_toEndOf="@+id/textView2"
+       app:layout_constraintTop_toTopOf="@+id/textView2" />
+
+   <ImageView
+       android:layout_width="30dp"
+       android:layout_height="30dp"
+       android:src="@drawable/kalash"
+       app:layout_constraintBottom_toBottomOf="@+id/textView2"
+       app:layout_constraintEnd_toStartOf="@+id/textView2"
+       app:layout_constraintTop_toTopOf="@+id/textView2" />
+
+   <TextView
+       android:id="@+id/textView2"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Shree Bhagawat Gita"
+       android:textColor="@color/titleColor"
+       android:textSize="22sp"
+
+       android:textStyle="bold"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintVertical_bias="0.186" />
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+  <TextView
+      android:id="@+id/tvChNo"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+   android:text="Capter 1"
+   android:layout_gravity="center"
+   android:layout_marginTop="@dimen/_4sdp"
+   android:textColor="@color/titleColor"
+   android:textSize="22sp"
+   android:textStyle="bold"
+   />
+  <TextView
+      android:id="@+id/tvTitle"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+   android:text="Arjur Vishad Yoga"
+   android:layout_gravity="center"
+   android:layout_marginTop="@dimen/_5sdp"
+   android:textStyle="bold"
+   android:textColor="@color/black"
+   android:textSize="20sp"
+   />
+
+  <TextView
+      android:id="@+id/tvDesc"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+   android:padding="@dimen/_7sdp"
+      android:maxLines="4"
+      android:textColor="@color/black"
+   android:text="dsjfbjksdjfbjbsdjsdjbvjbdjkfvbjkbdjvfbjdfbvjbdjkbfvjkbdjskbvjbdjsbfvjkbdjkfvbjkbdjkfvbjkbadsjkvbjksbdvjbsjkdvbjksbvdjkbjbsdjvbjsdbvjkbsjkvbjksbvjkbvdjksbvjksbvjksbvjksbvjkbjsdbvjksbvjksbjvbjksbvjksjvjsbvdjksbvjksbvjkbsjkvbjksdbvjdsbvjksdvjksj"
+   />
+
+  <TextView
+      android:id="@+id/readMore"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+   android:text="Read more..."
+   android:textColor="#2890FF"
+   android:textStyle="bold"
+   android:layout_marginStart="@dimen/_5sdp"/>
+
+
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+  <TextView
+      android:id="@+id/tvVerseCount"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+   android:text="47 Versers"
+
+   android:layout_marginStart="@dimen/_10sdp"
+   android:textStyle="bold"
+   android:textColor="@color/black"
+   android:textSize="17sp"/>
+  </LinearLayout>
+ </LinearLayout>
+
+
+ <LinearLayout
+     android:id="@+id/linearLayout5"
+     android:layout_width="0dp"
+     android:layout_height="0dp"
+     android:orientation="vertical"
+     app:layout_constraintBottom_toBottomOf="parent"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+
+  <com.facebook.shimmer.ShimmerFrameLayout
+      android:id="@+id/shimmer"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+
+    <include layout="@layout/item_verse_shimmer" />
+
+    <include layout="@layout/item_verse_shimmer" />
+
+    <include layout="@layout/item_verse_shimmer" />
+
+    <include layout="@layout/item_verse_shimmer" />
+   </LinearLayout>
+  </com.facebook.shimmer.ShimmerFrameLayout>
+
+
+  <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/rv_verse"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:visibility="gone"
+      app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+ </LinearLayout>
+
+ <ImageView
+     android:layout_marginTop="@dimen/_20sdp"
+     android:layout_width="@dimen/_100sdp"
+     android:layout_height="wrap_content"
+     android:alpha="0.2"
+     android:scaleType="center"
+     android:src="@drawable/verse_chakra"
+     app:layout_constraintBottom_toBottomOf="@+id/linearLayout4"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toTopOf="parent" />
+
+ <ImageView
+     android:layout_marginTop="@dimen/_20sdp"
+     android:layout_width="@dimen/_140sdp"
+     android:layout_height="wrap_content"
+     android:alpha="0.2"
+     android:scaleType="centerCrop"
+     android:src="@drawable/verse_chakra"
+     app:layout_constraintBottom_toBottomOf="@+id/linearLayout4"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.Fragments.VerseDetailFragment">
+
+    <ScrollView
+        android:layout_marginTop="@dimen/_5sdp"
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp">
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/kalash"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textView2"
+                    app:layout_constraintTop_toTopOf="@+id/textView2" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/kalash"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView2"
+                    app:layout_constraintEnd_toStartOf="@+id/textView2"
+                    app:layout_constraintTop_toTopOf="@+id/textView2" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Shree Bhagawat Gita"
+                    android:textColor="@color/titleColor"
+                    android:textSize="@dimen/_22sdp"
+
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <com.google.android.material.progressindicator.LinearProgressIndicator
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/progressBar"
+                android:layout_marginTop="@dimen/_5sdp"
+                app:indicatorColor="@color/titleColor"
+                app:trackColor="@color/titleColor" />
+
+
+            <TextView
+                android:id="@+id/verseNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:fontFamily="sans-serif"
+                android:text="|| 1.6 ||"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:textSize="18sp"
+                android:id="@+id/slokeText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="धृतराष्ट्र उवाच धर्मक्षेत्रे कुरुक्षेत्रे समवेता युयुत्सवः। मामकाः पाण्डवाश्चैव किमकुर्वत सञ्जय।।1.1।।"
+                android:textColor="@color/titleColor"
+                android:textStyle="bold" />
+
+
+
+            <TextView
+                android:id="@+id/wordMeaning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:padding="@dimen/_3sdp"
+                android:text="।।1.4 -- 1.6।। यहाँ (पाण्डवों की सेना में) बड़े-बड़े शूरवीर हैं, जिनके बहुत बड़े-बड़े धनुष हैं तथा जो युद्ध में भीम और अर्जुनके समान हैं। उनमें युयुधान (सात्यकि), राजा विराट और महारथी द्रुपद भी हैं। धृष्टकेतु और चेकितान तथा पराक्रमी काशिराज भी हैं। पुरुजित् और कुन्तिभोज--ये दोनों भाई तथा मनुष्योंमें श्रेष्ठ शैब्य भी हैं। पराक्रमी युधामन्यु और पराक्रमी उत्तमौजा भी हैं। सुभद्रापुत्र अभिमन्यु और द्रौपदी के पाँचों पुत्र भी हैं। ये सब-के-सब महारथी हैं। "
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_11sdp"
+                android:textStyle="bold" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:scaleType="fitStart"
+                    android:src="@drawable/up_left"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:rotationY="170"
+
+
+                    android:scaleType="fitStart"
+
+
+                    android:src="@drawable/up_left"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Commentry"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginStart="@dimen/_5sdp"/>
+                <com.facebook.shimmer.ShimmerFrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    android:id="@+id/shimmer"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+                    <include layout="@layout/item_verse_shimmer" /> <include layout="@layout/item_verse_shimmer" />
+                </com.facebook.shimmer.ShimmerFrameLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView2"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="15dp"
+                    app:cardUseCompatPadding="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_verse_card"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Author: "
+                                android:layout_marginTop="@dimen/_3sdp"
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:textColor="@color/black"/>
+                            <TextView
+                                android:id="@+id/autherName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Aditya Yadav"
+                                android:textStyle="bold"
+                                android:layout_marginTop="@dimen/_3sdp"
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:textColor="@color/black"/>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/commentryHindi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="।1.2।। व्याख्या-- 'तदा'-- जिyiuyuiyuiyuiyuiyuiyuyuiyuiyuyiyuiyyuuiyuiyoyoiyoiiooioyoiyioyioyioiyoiyioyioyiyioyioyioyiyioyioyioyioyioyoyoiyiioyioioyioyioyioyioyiioyioyioyioyioyioyioyioyioyoiyioyioyioyioyuiioihoy
+                            jkhkjkhjhjkdgfggfdgcgjfmkghj,kjxzxvfbgnhmjn,kjfgdbhnjm,kjhghfdgbhnmj,kjhgfdrghnmjn,jhgdrffhnmjn,khghfdrffhnmjnfedsrrghnmjn,gf
+                            hjbhjghjkjfghghfghfghfghfghffghfghjfgjfgjfgjfgjfjgfjfghfghfghfgjjgfjgfjgfjghjkj,kghjgtrhgjrdthjerdtfghjesrgtfhjrtfhyjkdgfhdfghjdfghjfghjfdghjmfdghgfchngfhghfjgfthjghghj
+                            kjbhjkhjhbjlbhlryjnrfyjnfrjnyfgfjfjgfjfjfjfgjfgjfgjgfjfgjjggfjgjfjgfjjgfjjjjjjjfggjjjjjjjjjjjjjjjjjfgjfgjfgjfgyjnfgjyrngdrfjnrdfg jkmnrfdjkmynrdfsjgj,fh mcvgycdxdfxmthtsmmvcmmbcmmbcmbcmccbmcgkmytjygtjn ytjghn jytn ytgtjytyjjjjyyyyjjjyyjyytyg
+                            kjhjkhjhjkhergtrgherhreherhdfhdfhdfhdfhdfhsrdthjk,rgthgyjertghyjhewsrfdgfthsedrfghjnkesdrftghjndrgtfhjkmrdgtfhyjkdrgtfhgyjkerdgtfhgyjkrgthgyjmk,grthyjkthhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+                            kjhjkhjkhgyhujreswyhrythryjtuikjl.jhgjfdffxghjkjjhgdxfghjkdfghjmsfrgfhesfrgfhefrgfhesfghdjfdsghjrfghjmerfgthjm,frgthfjm,rdgthygjkrgthgyjgrdthgyjefrgtghj
+                            स समय दोनों सेनाएँ युद्धके लिये खड़ी हुई थीं, उस समयकी बात सञ्जय यहाँ 'तदा' पदसे कहते हैं। कारण कि धृतराष्ट्रका प्रश्न 'युद्धकी इच्छावाले मेरे और पाण्डुके पुत्रोंने क्या किया'-- इस विषयको सुननेके लिये ही है।  'तु'--धृतराष्ट्रने अपने और पाण्डुके पुत्रोंके विषयमें पूछा है। अतः सञ्जय भी पहले धृतराष्ट्रके पुत्रों की बात बतानेके लिये यहाँ  'तु'  पदका प्रयोग करते हैं।"
+                            android:paddingLeft="@dimen/_5sdp"
+                            android:paddingRight="@dimen/_5sdp"
+                            android:paddingTop="@dimen/_3sdp"
+                            android:textColor="@color/white"
+                            android:layout_margin="@dimen/_10sdp"
+                            android:textStyle="bold"
+                            />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <ImageView
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_200sdp"
+        android:alpha="0.2"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="130dp"
+        android:src="@drawable/verse_chakra"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
